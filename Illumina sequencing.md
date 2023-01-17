@@ -7,6 +7,10 @@ https://vimeo.com/226448487
 https://support-docs.illumina.com/SHARE/IndexedSeq/indexed-sequencing.pdf
 
 
+https://thesequencingcenter.com/wp-content/uploads/2021/12/illumina-adapter-sequences.pdf
+
+
+
 **ExAmp Cluster Amplification (HiSeq 3000/4000, NextSeq 2000)**
 The new amplification reagent is very different from the cyclical, bridge-PCR of random clustering. 
 The details of this new chemistry are proprietary, and the only insight comes from patent descriptions. 
@@ -66,11 +70,15 @@ The primary culprit that causes index hopping seems to be the presence of free [
 Index hopping can be seen at slightly elevated levels on instruments using [patterned flow cells](https://emea.illumina.com/science/technology/next-generation-sequencing/sequencing-technology/patterned-flow-cells.html) with exclusion amplification chemistry versus those that do not use patterned flow cells. 
 
 http://enseqlopedia.com/2017/04/index-swapping-illumina-examp-clustering/
+https://www.10xgenomics.com/blog/sequence-with-confidence-understand-index-hopping-and-how-to-resolve-it
 
 https://thesequencingcenter.com/knowledge-base/what-is-index-hopping/
 
 https://emea.illumina.com/techniques/sequencing/ngs-library-prep/multiplexing/index-hopping.html
 https://www.youtube.com/watch?v=DR_8KbGGIhA
+http://enseqlopedia.com/2016/12/index-mis-assignment-between-samples-on-hiseq-4000-and-x-ten/
+
+https://www.biorxiv.org/content/10.1101/125724v1.full
 
 
 **Patterned flow cells**
