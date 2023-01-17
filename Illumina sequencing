@@ -1,0 +1,9 @@
+
+Mixing short & long inserts in the same flow cell.
+
+Source:
+https://emea.support.illumina.com/bulletins/2020/12/how-short-inserts-affect-sequencing-performance.html
+
+Short fragments preferentially bind to the flow cell compared to larger fragments. This negatively affects run performance as shorter fragments are overrepresented on the flow cell and in the final sequencing data.
+You also have to keep in mind that the flowcells and clustering methods are not the same in the NovaSeq as in the MiSeq / NextSeq. A patterned flowcell is much worse for sequencing long libraries, since clusters bridge into neighbouring wells.
+Also, the ExAmp chemistry has a higher bias against long fragments as the traditional bridge amplification.
