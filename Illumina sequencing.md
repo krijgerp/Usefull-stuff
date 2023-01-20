@@ -92,21 +92,15 @@ Most likely this index-switching happens during seeding and before cluster gener
 ![](https://sequencing.qcfail.com/wp-content/uploads/sites/2/2017/05/barcode_swap_mechanism.png)
 
 source:
-https://www.biorxiv.org/content/10.1101/125724v1
-http://enseqlopedia.com/2016/12/index-mis-assignment-between-samples-on-hiseq-4000-and-x-ten/
-http://enseqlopedia.com/2017/04/index-swapping-illumina-examp-clustering/
-https://www.10xgenomics.com/blog/sequence-with-confidence-understand-index-hopping-and-how-to-resolve-it
-https://thesequencingcenter.com/knowledge-base/what-is-index-hopping/
-https://emea.illumina.com/techniques/sequencing/ngs-library-prep/multiplexing/index-hopping.html
-https://www.youtube.com/watch?v=DR_8KbGGIhA
-https://sequencing.qcfail.com/articles/the-latest-illumina-sequencers-muddle-samples/
 
-
-
-
-
-
-
+ - https://www.biorxiv.org/content/10.1101/125724v1
+ - http://enseqlopedia.com/2016/12/index-mis-assignment-between-samples-on-hiseq-4000-and-x-ten/
+ - http://enseqlopedia.com/2017/04/index-swapping-illumina-examp-clustering/
+ - https://www.10xgenomics.com/blog/sequence-with-confidence-understand-index-hopping-and-how-to-resolve-it
+ - https://thesequencingcenter.com/knowledge-base/what-is-index-hopping/
+ - https://emea.illumina.com/techniques/sequencing/ngs-library-prep/multiplexing/index-hopping.html
+ - https://www.youtube.com/watch?v=DR_8KbGGIhA
+ - https://sequencing.qcfail.com/articles/the-latest-illumina-sequencers-muddle-samples/
 
 **ExAmp Cluster Amplification (HiSeq 3000/4000, NextSeq 2000)**
 Exclusion amplification allows simultaneous seeding (landing of the DNA strand in the nanowell) and amplification during cluster generation, which reduces the chances of multiple library fragments amplifying in a single cluster. This method maximizes the number of nanowells occupied by DNA clusters originating from a single DNA template, increasing the amount of usable data from each run.
