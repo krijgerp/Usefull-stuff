@@ -53,9 +53,9 @@ In our lab we are using the TruSeq-LT and NEBNext indexes. The Hamming distance 
 
 
 **Index Hopping**
-[Index hopping](https://www.illumina.com/techniques/sequencing/ngs-library-prep/multiplexing/index-hopping.html) occurs when [index](https://thesequencingcenter.com/wp-content/uploads/2021/12/indexed-sequencing.pdf) (barcode) sequences initially assigned to a specific sample are incorrectly assigned to other sample(s) in a pool of samples.
+[Index hopping](https://www.illumina.com/techniques/sequencing/ngs-library-prep/multiplexing/index-hopping.html) occurs when  an index initially assigned to a specific sample are incorrectly assigned to other sample(s) in a pool of samples.
 
-The primary culprit that causes index hopping seems to be the presence of free [adapters](https://thesequencingcenter.com/wp-content/uploads/2021/12/illumina-adapter-sequences.pdf) in samples during the library prep process, especially during the pooling or multiplexing steps. Libraries with higher levels of free adapters will see higher levels of index hopping. Apparently, free floating, unligated adapter sequences can hybridize with the wrong i5 or i7 index sequence, thus causing the wrong index to “hop” over to a different sample read. The elimination of free adapters is of paramount importance during library prep.
+The primary culprit that causes index hopping seems to be the presence of free adapters in samples during the library prep process, especially during the pooling or multiplexing steps. Libraries with higher levels of free adapters will see higher levels of index hopping. Apparently, free floating, unligated adapter sequences can hybridize with the wrong i5 or i7 index sequence, thus causing the wrong index to “hop” over to a different sample read. The elimination of free adapters is of paramount importance during library prep.
 
 ***Index hopping with ExAmp***:
 Index hopping can be seen at (slightly?) elevated levels on instruments using [patterned flow cells] (https://emea.illumina.com/science/technology/next-generation-sequencing/sequencing-technology/patterned-flow-cells.html) with exclusion amplification chemistry versus those that do not use patterned flow cells. 
@@ -65,7 +65,6 @@ Most likely this index-switching happens during seeding and before cluster gener
 source:
 https://www.biorxiv.org/content/10.1101/125724v1
 http://enseqlopedia.com/2016/12/index-mis-assignment-between-samples-on-hiseq-4000-and-x-ten/
-
 http://enseqlopedia.com/2017/04/index-swapping-illumina-examp-clustering/
 https://www.10xgenomics.com/blog/sequence-with-confidence-understand-index-hopping-and-how-to-resolve-it
 https://thesequencingcenter.com/knowledge-base/what-is-index-hopping/
@@ -85,7 +84,8 @@ ExAmp does not include the regular bind-and-wash steps prior to cluster generati
 https://support.illumina.com/content/dam/illumina-support/courses/examp-cluster-workflow/story_html5.html
 
 
-
+**Patterned flow cells**
+https://emea.illumina.com/science/technology/next-generation-sequencing/sequencing-technology/patterned-flow-cells.html
 
 
 
@@ -100,6 +100,4 @@ Source: https://emea.support.illumina.com/bulletins/2020/12/how-short-inserts-af
 
 
 
-**Patterned flow cells**
-https://emea.illumina.com/science/technology/next-generation-sequencing/sequencing-technology/patterned-flow-cells.html
 
