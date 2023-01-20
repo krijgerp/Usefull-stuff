@@ -1,22 +1,34 @@
 
 ## **Illumina sequencing**
 
-bridge PCR (bPCR) amplification using Isothermal amplification: https://www.nature.com/articles/nature07517
+bridge PCR (bPCR) amplification: 
+Bridge amplification takes place in a flow cell, aiming to generating clusters of DNA strands for further sequencing and analysis. The flow cell is coated with two types of oligos, complementary to the two adapters on the fragment strand, respectively. Once the fragment strand is added to the flow cell, it hybridizes to one of the oligos on the cell surface. A polymerase then moves along the strand, creating its complementary DNA strand, i.e. the reverse strand. The double-stranded DNA is denatured and the original strand (forward strand) is washed away. The remaining reverse strand then folds over and its adapter region hybridizes to the second type of oligo on the flow cell. Polymerase attaches to the reverse strand and generates the complementary strand that is identical to the forward strand, forming a double-stranded bridge. This bridge is then denatured, resulting in two single-stranded copies of the DNA, forward and reverse strand, anchored to the flow cell. By repeating this denaturation and extension process, millions of fragments are amplified, forming localized clusters on the flow cell.
+source:  https://www.nature.com/articles/nature07517
 
-
+http://dors.weizmann.ac.il/course/course2019-20/Noa_IlluminaPrimaryAnalysisPipeline.pdf
+https://biomedicalhub.github.io/genomics/01-part1-introduction.html
+https://apollo-institute.org/bridge-amplification-sequencing/
 
 https://www.youtube.com/watch?v=fCd6B5HRaZ8
 https://www.youtube.com/watch?v=womKfikWlxM
 
+isothermal amplification: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3761594/
+
+Currently available sequencing technologies utilize surface amplification to form clusters of amplified nucleic acid on a solid support. The most common approaches include bridge amplification and isothermal amplification can be performed using kinetic exclusion amplification (KEA), also referred to as exclusion amplification (ExAmp). Both of these amplification methodologies utilize 2 different surface primers, forward and reverse, immobilized on a solid support. However, both bridge and ExAmp cluster amplification processes make inefficient use of the 2 surface primers. Current estimates are that <10% of the surface primers are converted into template strands after amplification. 
+source: https://patents.google.com/patent/WO2016193695A1/en
+https://patentimages.storage.googleapis.com/65/f9/1a/722617e3d56510/WO2016193695A1.pdf
 
 
+**non-Patterned (Random) vs Patterned flow cells**
 
+random: HiSeq 2500, MiSeq, NextSeq 500, MiniSeq, HiSeq X
+patterned: HiSeq 3000/4000, NovaSeq, iSeq, NextSeq 1000/2000
 
+patterned: Cheaper/read however, more index hopping, insert sizes less variable, higher duplication rates.
 
-**non-Patterned vs Patterned flow cells**
-
-https://www.youtube.com/watch?v=oIJaA6h2bFM
-https://emea.illumina.com/science/technology/next-generation-sequencing/sequencing-technology/patterned-flow-cells.html
+ - http://core-genomics.blogspot.com/2016/01/almost-everything-you-wanted-to-know.html
+ - https://www.youtube.com/watch?v=oIJaA6h2bFM
+ - https://emea.illumina.com/science/technology/next-generation-sequencing/sequencing-technology/patterned-flow-cells.html
 
 Patterned flow cells contain billions to tens of billions of nanowells at fixed locations across both surfaces of the flow cell. The structured organization provides even spacing of sequencing clusters to deliver significant advantages over non-patterned cluster generation.
 
@@ -33,6 +45,11 @@ The new amplification reagent is very different from the cyclical, bridge-PCR of
 ExAmp does not include the regular bind-and-wash steps prior to cluster generation as described above. Instead, the single stranded library molecules—resulting from the alkali denaturation of double-stranded library molecules—are mixed with the ExAmp clustering reagents (Illumina) and loaded onto a patterned flow cell. The ExAmp chemistry involves a rapid isothermal amplification step necessary for cluster generation.
 
 https://support.illumina.com/content/dam/illumina-support/courses/examp-cluster-workflow/story_html5.html
+
+**4Channels SBS  (4 dyes) vs 2 channels SBS (2 dyes):**
+
+4 colour: MiSeq, HiSeq 2500. Bases are identified using 4 different fluorescent dyes, one for each base and four images per sequencing cycles.
+2 colour: MiniSeq, NextSeq, NovaSeq. A (green + red), G (no colour), T (green), C (Red).
 
 
 **Illumina library prep**
