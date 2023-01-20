@@ -1,8 +1,35 @@
 
 ## **Illumina sequencing**
 
+bridge PCR (bPCR) amplification using Isothermal amplification: https://www.nature.com/articles/nature07517
+
+
+
+https://www.youtube.com/watch?v=fCd6B5HRaZ8
+https://www.youtube.com/watch?v=womKfikWlxM
+
+
+
+
+
+
+**non-Patterned vs Patterned flow cells**
+
+https://www.youtube.com/watch?v=oIJaA6h2bFM
+https://emea.illumina.com/science/technology/next-generation-sequencing/sequencing-technology/patterned-flow-cells.html
+
+Patterned flow cells contain billions to tens of billions of nanowells at fixed locations across both surfaces of the flow cell. The structured organization provides even spacing of sequencing clusters to deliver significant advantages over non-patterned cluster generation.
+
+-   Clusters can only form in the nanowells, making the flow cells less susceptible to overloading, and more tolerant to a broader range of library densities.Each nanowell contains DNA probes used to capture prepared DNA strands for amplification during cluster generation. The regions between the nanowells are devoid of DNA probes.
+-   Precise nanowell positioning eliminates the need to map cluster sites, and saves hours on each sequencing run.
+-   Higher cluster density leads to more usable data per flow cell, driving down the cost per gigabase (Gb) of the sequencing run.
+
+In patterned flow cells bridge amplification immediately starts when a single stranded DNA is introduced to the flow cell after it hybridzides to an oligo present in the nanowell. However if there are free floating adapters this may result in index hopping (See below).
+
+
 **Illumina library prep**
 https://vimeo.com/226448487
+
 
 **Indexed sequencing**
 
@@ -62,6 +89,8 @@ Index hopping can be seen at (slightly?) elevated levels on instruments using [p
 Most likely it is free adapter that is acting as a primer for the recombinase/ploymerase to amplify from. As adapters are likely to come from all libraries in the pool they will randomly extend library molecules creating the swapped indexes.
 Most likely this index-switching happens during seeding and before cluster generation, because all the active reagents (in particular DNA polymerase) necessary for cluster generation are present in the reaction mix while the library molecules are being guided to the nanowells to seed a cluster. If free index primers are present during this procedure they can prime the library fragments and get extended by the active DNA polymerase, forming a new library molecule with a different index. These new library molecules with switched identities can seed free nanowells and generate clusters, thus resulting in reads that get falsely assigned to a different sample
 
+![](https://sequencing.qcfail.com/wp-content/uploads/sites/2/2017/05/barcode_swap_mechanism.png)
+
 source:
 https://www.biorxiv.org/content/10.1101/125724v1
 http://enseqlopedia.com/2016/12/index-mis-assignment-between-samples-on-hiseq-4000-and-x-ten/
@@ -70,22 +99,23 @@ https://www.10xgenomics.com/blog/sequence-with-confidence-understand-index-hoppi
 https://thesequencingcenter.com/knowledge-base/what-is-index-hopping/
 https://emea.illumina.com/techniques/sequencing/ngs-library-prep/multiplexing/index-hopping.html
 https://www.youtube.com/watch?v=DR_8KbGGIhA
+https://sequencing.qcfail.com/articles/the-latest-illumina-sequencers-muddle-samples/
+
+
+
+
 
 
 
 
 **ExAmp Cluster Amplification (HiSeq 3000/4000, NextSeq 2000)**
-The new amplification reagent is very different from the cyclical, bridge-PCR of random clustering. 
-The details of this new chemistry are proprietary, and the only insight comes from patent descriptions. 
+Exclusion amplification allows simultaneous seeding (landing of the DNA strand in the nanowell) and amplification during cluster generation, which reduces the chances of multiple library fragments amplifying in a single cluster. This method maximizes the number of nanowells occupied by DNA clusters originating from a single DNA template, increasing the amount of usable data from each run.
+
+The new amplification reagent is very different from the cyclical, bridge-PCR of random clustering. The details of this new chemistry are proprietary, and the only insight comes from patent descriptions. 
 ExAmp does not include the regular bind-and-wash steps prior to cluster generation as described above. Instead, the single stranded library molecules—resulting from the alkali denaturation of double-stranded library molecules—are mixed with the ExAmp clustering reagents (Illumina) and loaded onto a patterned flow cell. The ExAmp chemistry involves a rapid isothermal amplification step necessary for cluster generation.
-
-
 
 https://support.illumina.com/content/dam/illumina-support/courses/examp-cluster-workflow/story_html5.html
 
-
-**Patterned flow cells**
-https://emea.illumina.com/science/technology/next-generation-sequencing/sequencing-technology/patterned-flow-cells.html
 
 
 
