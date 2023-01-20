@@ -4,8 +4,20 @@
 https://vimeo.com/226448487
 
 **Indexed sequencing**
-https://support-docs.illumina.com/SHARE/IndexedSeq/indexed-sequencing.pdf
 
+• Single-indexed libraries—Adds Index 1 (i7) sequences to generate uniquely tagged libraries.
+• Dual-indexed libraries—Adds Index 1 (i7) and Index 2 (i5) sequences to generate uniquely tagged
+libraries.
+– Unique dual (UD) indexes have distinct, unrelated index adapters for both index reads. Index
+adapter sequences are eight or 10 bases long.
+– Combinatorial dual (CD) indexes have eight unique dual pairs of index adapters, so most
+libraries share sequences on the i7 or i5 end. Index adapter sequences are eight bases long.
+During indexed sequencing, the index is sequenced in a separate read called the Index Read, where a
+new sequencing primer is annealed. When libraries are dual-indexed, the sequencing run includes two
+additional reads, called the Index 1 Read and Index 2 Read.
+
+
+https://support-docs.illumina.com/SHARE/IndexedSeq/indexed-sequencing.pdf
 
 https://thesequencingcenter.com/wp-content/uploads/2021/12/illumina-adapter-sequences.pdf
 
