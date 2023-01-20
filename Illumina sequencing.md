@@ -26,7 +26,7 @@ Patterned flow cells contain billions to tens of billions of nanowells at fixed 
 
 In patterned flow cells bridge amplification immediately starts when a single stranded DNA is introduced to the flow cell after it hybridzides to an oligo present in the nanowell. However if there are free floating adapters this may result in index hopping (See below).
 
-*ExAmp Cluster Amplification (HiSeq 3000/4000, NextSeq 2000)**
+**ExAmp Cluster Amplification (HiSeq 3000/4000, NextSeq 2000)**
 Exclusion amplification allows simultaneous seeding (landing of the DNA strand in the nanowell) and amplification during cluster generation, which reduces the chances of multiple library fragments amplifying in a single cluster. This method maximizes the number of nanowells occupied by DNA clusters originating from a single DNA template, increasing the amount of usable data from each run.
 
 The new amplification reagent is very different from the cyclical, bridge-PCR of random clustering. The details of this new chemistry are proprietary, and the only insight comes from patent descriptions. 
