@@ -20,6 +20,9 @@ source: https://patents.google.com/patent/WO2016193695A1/en
 https://patentimages.storage.googleapis.com/65/f9/1a/722617e3d56510/WO2016193695A1.pdf
 
 
+One obvious part of the exclusion amplification as implemented is the very viscous enzyme mix. Probably the diffusion of the library fragments towards the flowcell is very much slowed down (requiring also higher library concentrations?) giving the molecule that arrives first the chance to become amplified and fill entire nanowells before a second one arrives (http://www.google.com/patents/WO2013188582A1?cl=en). The viscosity enhanced "drag" also could explain the stronger bias towards smaller inset size reads?
+The high viscosity buffer together with high library concentrations and "RPA" amplification for the clustering process ("Recombinase Polymerase Amplification" ( http://www.twistdx.co.uk/our_technology/ )) might be sufficient for the Kinetic Exclusion Amplification on the nanowell flowcells? It seems to me that the other methods described in the patent might not be compatible with the old cBots (these can be used for the Hiseq3000/4000 clustering after a software upgrade)?
+
 **non-Patterned (Random) vs Patterned flow cells**
 
 random: HiSeq 2500, MiSeq, NextSeq 500, MiniSeq, HiSeq X
