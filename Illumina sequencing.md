@@ -3,7 +3,8 @@
 
 bridge PCR (bPCR) amplification: 
 Bridge amplification takes place in a flow cell, aiming to generating clusters of DNA strands for further sequencing and analysis. The flow cell is coated with two types of oligos, complementary to the two adapters on the fragment strand, respectively. Once the fragment strand is added to the flow cell, it hybridizes to one of the oligos on the cell surface. A polymerase then moves along the strand, creating its complementary DNA strand, i.e. the reverse strand. The double-stranded DNA is denatured and the original strand (forward strand) is washed away. The remaining reverse strand then folds over and its adapter region hybridizes to the second type of oligo on the flow cell. Polymerase attaches to the reverse strand and generates the complementary strand that is identical to the forward strand, forming a double-stranded bridge. This bridge is then denatured, resulting in two single-stranded copies of the DNA, forward and reverse strand, anchored to the flow cell. By repeating this denaturation and extension process, millions of fragments are amplified, forming localized clusters on the flow cell.
-source:  https://www.nature.com/articles/nature07517
+
+original paper:  https://www.nature.com/articles/nature07517
 
 http://dors.weizmann.ac.il/course/course2019-20/Noa_IlluminaPrimaryAnalysisPipeline.pdf
 https://biomedicalhub.github.io/genomics/01-part1-introduction.html
