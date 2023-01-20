@@ -26,6 +26,14 @@ Patterned flow cells contain billions to tens of billions of nanowells at fixed 
 
 In patterned flow cells bridge amplification immediately starts when a single stranded DNA is introduced to the flow cell after it hybridzides to an oligo present in the nanowell. However if there are free floating adapters this may result in index hopping (See below).
 
+*ExAmp Cluster Amplification (HiSeq 3000/4000, NextSeq 2000)**
+Exclusion amplification allows simultaneous seeding (landing of the DNA strand in the nanowell) and amplification during cluster generation, which reduces the chances of multiple library fragments amplifying in a single cluster. This method maximizes the number of nanowells occupied by DNA clusters originating from a single DNA template, increasing the amount of usable data from each run.
+
+The new amplification reagent is very different from the cyclical, bridge-PCR of random clustering. The details of this new chemistry are proprietary, and the only insight comes from patent descriptions. 
+ExAmp does not include the regular bind-and-wash steps prior to cluster generation as described above. Instead, the single stranded library molecules—resulting from the alkali denaturation of double-stranded library molecules—are mixed with the ExAmp clustering reagents (Illumina) and loaded onto a patterned flow cell. The ExAmp chemistry involves a rapid isothermal amplification step necessary for cluster generation.
+
+https://support.illumina.com/content/dam/illumina-support/courses/examp-cluster-workflow/story_html5.html
+
 
 **Illumina library prep**
 https://vimeo.com/226448487
@@ -102,13 +110,8 @@ source:
  - https://www.youtube.com/watch?v=DR_8KbGGIhA
  - https://sequencing.qcfail.com/articles/the-latest-illumina-sequencers-muddle-samples/
 
-**ExAmp Cluster Amplification (HiSeq 3000/4000, NextSeq 2000)**
-Exclusion amplification allows simultaneous seeding (landing of the DNA strand in the nanowell) and amplification during cluster generation, which reduces the chances of multiple library fragments amplifying in a single cluster. This method maximizes the number of nanowells occupied by DNA clusters originating from a single DNA template, increasing the amount of usable data from each run.
+*
 
-The new amplification reagent is very different from the cyclical, bridge-PCR of random clustering. The details of this new chemistry are proprietary, and the only insight comes from patent descriptions. 
-ExAmp does not include the regular bind-and-wash steps prior to cluster generation as described above. Instead, the single stranded library molecules—resulting from the alkali denaturation of double-stranded library molecules—are mixed with the ExAmp clustering reagents (Illumina) and loaded onto a patterned flow cell. The ExAmp chemistry involves a rapid isothermal amplification step necessary for cluster generation.
-
-https://support.illumina.com/content/dam/illumina-support/courses/examp-cluster-workflow/story_html5.html
 
 
 
