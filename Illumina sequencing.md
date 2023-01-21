@@ -9,6 +9,7 @@ original paper:  https://www.nature.com/articles/nature07517
 http://dors.weizmann.ac.il/course/course2019-20/Noa_IlluminaPrimaryAnalysisPipeline.pdf
 https://biomedicalhub.github.io/genomics/01-part1-introduction.html
 https://apollo-institute.org/bridge-amplification-sequencing/
+https://hbctraining.github.io/Training-modules/planning_successful_rnaseq/slides/sequencing_technologies_mm.pdf
 
 https://www.youtube.com/watch?v=fCd6B5HRaZ8
 https://www.youtube.com/watch?v=womKfikWlxM
