@@ -10,9 +10,10 @@ original paper:  https://www.nature.com/articles/nature07517
 -   https://biomedicalhub.github.io/genomics/01-part1-introduction.html
 -   https://apollo-institute.org/bridge-amplification-sequencing/
 -   https://hbctraining.github.io/Training-modules/planning_successful_rnaseq/slides/sequencing_technologies_mm.pdf
+-   https://www.youtube.com/watch?v=fCd6B5HRaZ8
+-   https://www.youtube.com/watch?v=womKfikWlxM
 
-https://www.youtube.com/watch?v=fCd6B5HRaZ8
-https://www.youtube.com/watch?v=womKfikWlxM
+
 
 isothermal amplification: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3761594/
 
