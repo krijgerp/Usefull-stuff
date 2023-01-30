@@ -93,8 +93,7 @@ By default, bcl2fastq allows 1 mismatch in each barcode. If you allow one sequen
 using R the hamming distance between indexes can be calculated using this script:
 
     require(Biostrings)
-    require(ShortRead)
-    
+   
     index<-read.table('/home/p.krijger_cbs-niob.local/projects/index/index.tsv', header = FALSE, sep = '\t')
     barcodes<-DNAStringSet(index$V2)
     names(barcodes)<-index$V1
